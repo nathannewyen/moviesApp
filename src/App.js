@@ -9,7 +9,7 @@ function App() {
     "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=4228f6f94463d3d0d334fb285213df67&page=1";
 
   const SEARCH_API =
-    "https://api.themoviedb.org/3/search/movie?&api_key=api_key=4228f6f94463d3d0d334fb285213df67&query=";
+    "https://api.themoviedb.org/3/search/movie?&api_key=4228f6f94463d3d0d334fb285213df67&query=";
 
   useEffect(() => {
     getMovies(FEATURED_API);
