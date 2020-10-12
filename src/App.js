@@ -1,6 +1,7 @@
 import React, { useState, useEffect, Fragment } from "react";
 import Movie from "./components/Movies.js";
 
+
 function App() {
   const [movies, setMovies] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
@@ -41,6 +42,20 @@ function App() {
 
   return (
     <Fragment>
+      <nav>
+        <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt="logo"/>
+        <ul>
+          <li>
+            <a href="!"><b>Movies</b></a>
+          </li>
+          <li>
+            <a href="!"> <b>TV Shows</b></a>
+          </li>
+          <li>
+            <a href="!"><b>People</b></a>
+          </li>
+        </ul>
+      </nav>
       <header>
         <form onSubmit={handleOnSubmit}>
           <input
