@@ -22,7 +22,7 @@ code {
 
 nav {
   padding: 0.5rem 4rem;
-  /* position: fixed;  */
+  background-color: #373b69;
 }
 
 nav img {
@@ -46,18 +46,17 @@ nav li a {
   text-decoration: none;
 }
 
-header {
-  background-color: #373b69;
-  display: flex !important;
+form {
+  display: inline-block;
   padding: 1rem;
-  justify-content: flex-end;
 }
+
 
 .search {
   background-color: white;
   border: 2px solid #22254b;
   border-radius: 50px;
-  color: white;
+  color: #22254b;
   font-family: infinite;
   font-size: 1.2rem;
   padding: 0.5rem 1.5rem;
@@ -102,7 +101,7 @@ header {
 }
 
 .movie-info span {
-  width: 50px;
+  width: 60px;
 }
 
 

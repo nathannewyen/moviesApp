@@ -11,9 +11,13 @@ const setVoteClass = (vote) => {
   }
 };
 
-const Movie = ({ title, poster_path, overview, vote_average }) => (
+const Movie = ({ title, poster_path, overview, vote_average, id }) => {
+  const MOVIE_INFO = `/movie/${id}`
+  return (
   <div className="movie">
-    <img src={poster_path ? (IMG_API + poster_path) : 'https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2240&q=80'} alt={title} />
+    <a href={MOVIE_INFO}>
+      <img src={poster_path ? (IMG_API + poster_path) : 'https://images.unsplash.com/photo-1485846234645-a62644f84728?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2240&q=80'} alt={title} />
+      </a>
     <div className="movie-info">
       <h3>{title}</h3>
       <span className={`tag ${setVoteClass(vote_average)}`}>
@@ -25,6 +29,6 @@ const Movie = ({ title, poster_path, overview, vote_average }) => (
       <p>{overview}</p>
     </div>
   </div>
-);
+)};
 
 export default Movie;
